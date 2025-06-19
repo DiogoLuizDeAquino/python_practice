@@ -11,7 +11,10 @@ attempt = int(attempt_str)
 if(secret_number == attempt):
     print("Well done, you found the secret number!!!")
 else:
-    print("You lose !!!")
+    if(attempt > secret_number):
+        print("Wrong! Your number is too high than the secret number!!")
+    elif(attempt < secret_number):
+        print("Wrong! Your number is too low than the secret number!!")
 
 print("End of the game :)")
 
