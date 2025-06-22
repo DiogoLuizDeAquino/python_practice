@@ -9,23 +9,24 @@ chance = 5
 attempt_str = input("Find the secret number. You have 5 chances! Press 'ENTER' to continue ")
 
 while (chance > 0):
+    print("The number of chances you have: ", chance)
     chance_str = input("Take your best shot:")
 
     attempt = int(chance_str)
 
     if(secret_number == attempt):
         print("Well done, you found the secret number!!!")
+        break
     else:
         if(attempt > secret_number):
             print("Wrong! Your number is too high than the secret number!!")
         elif(attempt < secret_number):
             print("Wrong! Your number is too low than the secret number!!")
-
-    chance = chance -1
-    print("The number of chances you have: ", chance)
-    if(chance <= 0):
-            print("Your chances are DONE!!!")
         
+    chance = chance -1
 
+    if(chance <= 0):
+        print("Your chances are DONE!!!")
+        
 print("End of the game :)")
 
