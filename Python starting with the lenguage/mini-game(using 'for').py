@@ -1,11 +1,13 @@
+import random
+
 print('#######################################')
 print('Welcome to this basic divination GAME!!')
 print('######################################')
 
-secret_number = 73
+secret_number = random.randrange(1,101) #101 to avoid null/zero numbers
 total_chances = 5
 
-input("Find the secret number. You have 5 chances! Press 'ENTER' to continue ")
+input("Find the secret number. You have {} chances! Press 'ENTER' to continue ".format(total_chances))
 
 for current_chance in range(1, total_chances + 1):
     print("Number of chances left:", total_chances - current_chance + 1)
