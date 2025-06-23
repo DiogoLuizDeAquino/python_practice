@@ -6,6 +6,8 @@ print('######################################')
 
 secret_number = random.randrange(1,101) #101 to avoid null/zero numbers
 total_chances = 5
+print("Difficulty levels: (1) Fácil,(2) Médio ,(3) Difícil")
+input("choose the difficulty level: ")
 
 input("Find the secret number. You have {} chances! Press 'ENTER' to continue ".format(total_chances))
 
