@@ -3,4 +3,11 @@ def play():
     print('Welcome to this basic forca GAME!!')
     print ('######################################')
 
-    print("(1) Forca (2) Mini-game")
+    secret_word = "banana"
+    hanged = False
+    guessed = False
+
+    while not hanged and not guessed:
+        print("Playing...")
+
+    print("End of the game")
