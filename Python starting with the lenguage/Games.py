@@ -6,7 +6,7 @@ print('***********Choose a Game!!*************')
 print('########################################')
 
 print('(1) Forca-Game (2) Divination-Game')
-
+1
 game = int(input("What game do you wanna play?: "))
 
 if(game == 1):

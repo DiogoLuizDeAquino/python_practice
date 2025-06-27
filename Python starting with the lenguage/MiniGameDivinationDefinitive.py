@@ -41,3 +41,6 @@ def play():
             print("Your chances are DONE!!!")
 
     print("End of the game :)")
+
+if __name__ == "__main__":
+    play()
