@@ -11,5 +11,7 @@ game = int(input("What game do you wanna play?: "))
 
 if(game == 1):
     print("You chose the Forca-Gmme!")
+    MiniGameForca.play()
 elif(game == 2):
     print("You chose the Divination-Game!")
+    MiniGameDivinationDefinitive.play()
