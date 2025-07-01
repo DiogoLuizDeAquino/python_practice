@@ -13,7 +13,7 @@ def play():
 
         index = 0
         for letter in secret_word:
-            if (guess == letter):
+            if (guess.upper == letter.upper()):
                 print("You found the letter {} in the position {}".format(letter, index))
             index = index + 1
         print("Playing...")
