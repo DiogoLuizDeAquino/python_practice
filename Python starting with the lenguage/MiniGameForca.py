@@ -9,6 +9,7 @@ def play():
 
     while not hanged and not guessed:
         guess = input("Type a letter: ")
+        guess = guess.strip()
 
         index = 0
         for letter in secret_word:
