@@ -23,10 +23,10 @@ def play():
         else:
             count_errors = count_errors + 1
 
-        print("Playing...")
+        hanged = count_errors == 6
         print(list_right_letters)
 
-print("End of the game")
+    print("End of the game")
 
 if __name__ == "__main__":
     play()
