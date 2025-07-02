@@ -19,9 +19,9 @@ def play():
             for letter in secret_word:
                 if (guess.upper() == letter.upper()):
                     list_right_letters[index] = letter
-                index = index + 1
+                index += 1
         else:
-            count_errors = count_errors + 1
+            count_errors += 1
 
         hanged = count_errors == 6
         print(list_right_letters)
