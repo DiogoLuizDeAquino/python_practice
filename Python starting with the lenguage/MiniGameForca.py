@@ -4,6 +4,8 @@ def play():
     print ('######################################')
 
     secret_word = "banana"
+    list_right_letters = ["", "", "", "", "", ""]
+
     hanged = False
     guessed = False
 
@@ -13,10 +15,12 @@ def play():
 
         index = 0
         for letter in secret_word:
-            if (guess.upper == letter.upper()):
-                print("You found the letter {} in the position {}".format(letter, index))
+            if (guess.upper() == letter.upper()):
+                list_right_letters[index] = letter
             index = index + 1
+
         print("Playing...")
+        print(list_right_letters)
 
 print("End of the game")
 
