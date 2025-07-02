@@ -3,7 +3,7 @@ def play():
     print('Welcome to this basic forca GAME!!')
     print ('######################################')
 
-    secret_word = "banana"
+    secret_word = "banana".upper()
     list_right_letters = ["", "", "", "", "", ""]
 
     hanged = False
@@ -12,12 +12,12 @@ def play():
 
     while not hanged and not guessed:
         guess = input("Type a letter: ")
-        guess = guess.strip()
+        guess = guess.strip().upper()
 
         if guess in secret_word:
             index = 0
             for letter in secret_word:
-                if (guess.upper() == letter.upper()):
+                if (guess == letter):
                     list_right_letters[index] = letter
                 index += 1
         else:
