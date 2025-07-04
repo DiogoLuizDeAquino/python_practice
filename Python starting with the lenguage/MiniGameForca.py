@@ -30,3 +30,5 @@ def play():
 
 if __name__ == "__main__":
     play()
+
+#Preciso continuar na lógica da forca
