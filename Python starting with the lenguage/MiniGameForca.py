@@ -10,6 +10,8 @@ def play():
     guessed = False
     count_errors = 0
 
+    print(list_right_letters)
+
     while not hanged and not guessed:
         guess = input("Type a letter: ")
         guess = guess.strip().upper()
@@ -31,4 +33,4 @@ def play():
 if __name__ == "__main__":
     play()
 
-#Preciso continuar na lógica da forca
+#Preciso continuar na lógica da forca, voltando a editar o game
