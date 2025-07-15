@@ -26,6 +26,7 @@ def play():
             count_errors += 1
 
         hanged = count_errors == 6
+        guessed = " " not in list_right_letters
         print(list_right_letters)
 
     print("End of the game")
