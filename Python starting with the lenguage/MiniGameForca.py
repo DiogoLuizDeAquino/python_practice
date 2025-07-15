@@ -29,9 +29,11 @@ def play():
         guessed = " " not in list_right_letters
         print(list_right_letters)
 
-    print("End of the game")
+    if guessed:
+        print("Congrats!!! U found the secret word!!!")
+    else:
+        print("Sorry, your guesses are over!")
+    print("End of the game!")
 
 if __name__ == "__main__":
     play()
-
-#Preciso continuar na lógica da forca, voltando a editar o game
