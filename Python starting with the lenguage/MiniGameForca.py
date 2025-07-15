@@ -33,7 +33,7 @@ def play():
         print("Congrats!!! U found the secret word!!!")
     else:
         print("Sorry, your guesses are over!")
-
+    print("End of the game!")
 
 if __name__ == "__main__":
     play()
